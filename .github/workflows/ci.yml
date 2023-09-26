@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --local user.email "clionl@qq.com"
           git config --local user.name "clionl"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git remote set-url origin https://github.com/clionl/tryagain
           git pull --rebase
           git commit --allow-empty -m "a commit a day keeps your girlfriend away"
           git push
